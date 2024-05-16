@@ -1,6 +1,10 @@
+// Divide by 0
 export default function divideFunction(numerator, denominator) {
   if (denominator === 0) {
-    throw new Error('Cannot divide by 0');
+    throw Error('cannot divide by 0');
   }
-  return numerator / denominator;
+
+  const result = numerator / denominator;
+
+  return result;
 }
